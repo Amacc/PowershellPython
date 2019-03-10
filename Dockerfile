@@ -9,6 +9,7 @@ RUN wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsof
 
 RUN apt install apt-utils -y
 RUN apt install apt-transport-https -y 
+RUN apt install software-properties-common -y
 RUN add-apt-repository universe
 RUN apt update
 RUN apt install python3-pip -y         
