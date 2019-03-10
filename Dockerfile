@@ -1,3 +1,4 @@
 FROM mcr.microsoft.com/powershell
 
-RUN apt-get install python3.6
+RUN apt update
+RUN apt install python3-pip -y
